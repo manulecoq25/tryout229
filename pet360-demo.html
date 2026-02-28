@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MyPet360 — Soin complet pour votre animal au Bénin</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cabinet+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
-<style>
-:root {
-  --night:#0E1810;--forest:#1A3324;--pine:#2D5C3F;--fern:#4A8A5E;--sage:#7DB890;
-  --mist:#C3DCC9;--foam:#EAF4EC;--linen:#F8F3EB;--cream:#FDF9F3;
-  --gold:#C9933A;--amber:#E6B44E;--butter:#FAE8B0;
-  --sienna:#B85A36;--blush:#F2DDD3;--white:#FEFEFE;
-  --g1:#F0F2F0;--g2:#D8DDD8;--g3:#8C978C;--g4:#4A574A;
-  --t1:#141F14;--t2:#3D4E3D;--t3:#7A8A7A;--t4:#A8B8A8;
-  --r:18px;--r2:26px;--r3:40px;
-  --sh:0 2px 16px rgba(14,24,16,.07);
-  --sh2:0 8px 40px rgba(14,24,16,.13);
-  --sh3:0 24px 80px rgba(14,24,16,.22);
-}
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{font-family:'Cabinet Grotesk',sans-serif;background:var(--cream);color:var(--t1);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
-::-webkit-scrollbar{width:5px;}::-webkit-scrollbar-track{background:var(--g1);}::-webkit-scrollbar-thumb{background:var(--g2);border-radius:3px;}
-.page{display:none;animation:pageIn .42s cubic-bezier(.25,.46,.45,.94) both;}
-.page.active{display:block;}
-@keyframes pageIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet 360 Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-<div class="page active" id="page-home">
-<h1>MyPet360 Demo</h1>
-<p>Your pet care platform is loading...</p>
-</div>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#vets">Vets</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#dog-walking">Dog Walking</a></li>
+            <li><a href="#garde-booking">Garde Booking</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <h1>Welcome to Pet 360</h1>
+        <p>Your one-stop solution for all your pet needs!</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of services including grooming, training, and more.</p>
+    </section>
+
+    <section id="vets">
+        <h2>Our Vets</h2>
+        <p>Meet our team of experienced veterinarians.</p>
+    </section>
+
+    <section id="shop">
+        <h2>Shop</h2>
+        <p>Find the best products for your pets in our shop.</p>
+    </section>
+
+    <section id="dog-walking">
+        <h2>Dog Walking</h2>
+        <p>Professional dog walking services available.</p>
+    </section>
+
+    <section id="garde-booking">
+        <h2>Garde Booking</h2>
+        <p>Book a safe place for your pet to stay.</p>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <p>Items in your cart will appear here.</p>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Modal content goes here...</p>
+        </div>
+    </div>
 </body>
 </html>
